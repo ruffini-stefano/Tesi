@@ -1,0 +1,116 @@
+\documentclass[a4paper,12pt,oneside]{book}
+\usepackage[a4paper,margin=2in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage[square,numbers,super]{natbib}
+\usepackage[italian]{babel}
+\graphicspath{ {Immagini/} }
+\usepackage{fullpage}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{graphics}
+\usepackage{amsmath}
+\usepackage{amstext}
+\usepackage{lscape}
+\usepackage[nottoc]{tocbibind}
+\usepackage{engrec}
+\usepackage{microtype}
+\usepackage{enumerate}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{marginnote}
+\usepackage{float}
+\usepackage{setspace}
+\usepackage{url}
+\def\UrlBreaks{\do\/\do-}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\setlength{\headsep}{0.35in}
+\let\MakeUppercase\relax
+\renewcommand\sectionmark[1]{}
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{3}
+
+
+\usepackage{listings}
+\lstset{
+	breaklines=true, 
+	frame=single, 
+	numbers=left,
+	tabsize=2,
+	basicstyle=\scriptsize,
+	showstringspaces=false
+}
+
+\frenchspacing
+\thispagestyle{plain}
+
+
+\begin{document}
+\frontmatter
+\begin{titlepage}
+	
+	\noindent
+        \begin{minipage}[t]{0.19\textwidth}
+            \vspace{-4mm}{\includegraphics[scale=1.15]{logo_unimib.pdf}}
+        \end{minipage}
+        \begin{minipage}[t]{0.81\textwidth}
+        {
+            \setstretch{1.42}
+            {\textsc{Università degli Studi di Milano - Bicocca}} \\
+            \textbf{Scuola di Scienze} \\
+            \textbf{Dipartimento di Informatica, Sistemistica e Comunicazione} \\
+            \textbf{Corso di laurea in Informatica} \\
+            \par
+        }
+        \end{minipage}
+	
+	\vspace{40mm}
+	
+	\begin{center}
+		{\LARGE{
+				\setstretch{1.2}
+				\textbf{Learning Analytics Dashboard}
+				\par
+		}}
+	\end{center}
+	
+	\vspace{30mm}
+	
+	\noindent
+	{\large \textbf{Relatore:} Prof. Stella Fabio } \\
+		
+	\vspace{15mm}
+	
+	\begin{flushright}
+		{\large \textbf{Relazione della prova finale di:}} \\
+		\large{Ruffini Stefano} \\
+		\large{Matricola 808328} 
+	\end{flushright}
+	
+	\vspace{20mm}
+	\begin{center}
+		{\large{\bf Anno Accademico 2017-2018}}
+	\end{center}
+	
+	\restoregeometry
+	
+\end{titlepage}
+
+\tableofcontents
+
+\setlength{\parindent}{0pt}.
+\setlength{\parskip}{1em}
+
+\input capitoli
+
+\backmatter
+
+\bibliographystyle{unsrtnat}
+\bibliography{bibliografia}
+
+\input altroMateriale
+
+
+\end{document}
